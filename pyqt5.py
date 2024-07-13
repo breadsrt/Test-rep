@@ -30,10 +30,29 @@ window.setLayout(main_line)
 
 window.setLayout(main_line)
 
+
+
+zapitanya = QLabel("руб?")
+fifas = QRadioButton("huh")
+
+hline1 = QHBoxLayout()
+hline2 = QHBoxLayout()
+hline1.addWidget(fifas)
+
+
+main_line.addLayout(hline1)
+main_line.addLayout(hline2)
+
+window.setLayout(main_line)
+window.setLayout(main_line)
+
+
 def win_btn():
     msg = QMessageBox()
     msg.setText("Ти переміг!")
     msg.exec()
+
+
 
 geode_btn.clicked.connect(win_btn)
 geode_btn.clicked.connect(win_btn)
